@@ -85,18 +85,6 @@ ROOT for WSL
 5. Restart bash, type "root" and analyse away
 
 
-ROOUNFOLD
-=========
-1. Download from http://hepunx.rl.ac.uk/~adye/software/unfold/RooUnfold.html
-
-2. Download zip from https://github.com/kreczko/RooUnfold	(Unclear what the differences are between this and above roo installation.)
-
-3. Magic switcharoow with RoounfoldTUnfold.h/.cxx
-
-4. "make"
-
-5. Test with examples as in http://hepunx.rl.ac.uk/~adye/software/unfold/RooUnfold.html
-
 
 GUI for WSL with VNC
 ====================
