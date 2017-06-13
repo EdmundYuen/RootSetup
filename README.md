@@ -1,29 +1,23 @@
 # RootSetup
-A rough guide for setting up Root on Windows machines
-
-(This started off as a way of documenting my bumbling steps and is still very much a work in progress.)
+A rough guide for setting up Root on Windows machines (work in progress)
 
 
-DOWNLOADS
-=========
-Root 5.34.36 (Windows Visual Studio 2013)
-	root_v5.34.36.win32.vc12.exe
-	https://root.cern/content/release-53436
+## Downloads
+### Root 5.34.36 (Windows Visual Studio 2013)
+#### [Release 5.34/36 - 2016-04-05](https://root.cern/content/release-53436)
+##### [root_v5.34.36.win32.vc12.exe](https://root.cern.ch/download/root_v5.34.36.win32.vc12.exe)
 
-	Most recent available build for Windows.
-	*Should* set system environment variables automatically, but only seems to add the installation dir to PATH. Manually update Path to point to \bin and \lib too.
+Most recent available build of ROOT for Windows.
 
-Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5
-	wdexpress_full.exe
-	https://www.microsoft.com/en-sg/download/details.aspx?id=48131
+### Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5
+#### [en_visual_studio_express_2013_for_windows_desktop_with_update_5_x86_web_installer_6815514.exe](https://my.visualstudio.com/Downloads?pid=1819)
 
-	Required to compile C++. Visual Studio 2015 provides standalone compiler tools (w/o the IDE) but 2013 requires installation of the IDE still.
-	Express version does not include the full set of developer tools for Visual Studio, but is sufficient for compiler functionality.
-	Web installer.
+_A free Visual Studio Dev Essentials subscription will be required to access the above download. See [here](https://www.visualstudio.com/vs/older-downloads/) for more information._
+
+Required to compile C++. Express version does not include the full set of developer tools for Visual Studio, but is sufficient for compiler functionality. Web installer.
 
 
-INSTALLATION
-============
+## Installation
 1. Install Visual Studio
 	(I launch after installation in case that sets up needed configuration details. Skip sign in. Initial launch might lag.)
 
@@ -56,8 +50,7 @@ INSTALLATION
 	! append the following " && C:\root_v5.34.36\bin\thisroot.bat" to the target to run thisroot.bat on startup of cmd prompt (this should set env variables needed)
 
 
-WSL (Windows Subsystem for Linux)
-=================================
+## WSL (Windows Subsystem for Linux)
 1. Search for "Turn Windows features on or off" and enable the Windows Subsystem for Linux option (Restart required)
 
 2. Search for "Use developer features" and choose Developer mode
@@ -67,8 +60,7 @@ WSL (Windows Subsystem for Linux)
 4. Refer to https://root.cern/build-prerequisites under Ubuntu 10, 12 , 14 and 16 and install useful packages (may be required for building Root/RooUnfold)
 
 
-ROOT for WSL
-============
+## ROOT for WSL
 1. Choose either to build from source or download the binary (Ubuntu 14 gcc4.8	root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz)
 	To download binary in bash: "wget https://root.cern.ch/download/root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz"
 
@@ -86,19 +78,16 @@ ROOT for WSL
 
 
 
-GUI for WSL with VNC
-====================
+## GUI for WSL with VNC
 TODO in future if there's luxury of time.
 
 
-Utility Programs
-================
+## Utility Programs
 Bitvise for file transfer: https://www.bitvise.com/ssh-client-download
 	Server host: lxplus.cern.ch
 
 
-MISC
-====
+## MISC
 VNC Tutorial	https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-14-04
 Reddit wiki	https://www.reddit.com/r/bashonubuntuonwindows/wiki/index
 More wiki	https://github.com/abergs/ubuntuonwindows 
