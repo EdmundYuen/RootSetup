@@ -75,6 +75,7 @@ Required to compile C++. Express version does not include the full set of develo
     
 			`echo 'export DISPLAY="localhost:0"' >> ~/.bashrc`
     > Tip: navigate to the dir containing thisroot.sh and run `source thisroot.sh` then `which thisroot.sh` to determine the right path
+    
     > Alternative: `nano ~/.bashrc` to manually edit the file to include the required two lines above
 
 4. The machine name needs to be added to /etc/hosts (to fix "unable to resolve localhost").
@@ -95,8 +96,11 @@ Bitvise for file transfer: https://www.bitvise.com/ssh-client-download
 
 ## MISC
 [VNC Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-14-04)
+
 [Reddit wiki](https://www.reddit.com/r/bashonubuntuonwindows/wiki/index)
+
 [More wiki](https://github.com/abergs/ubuntuonwindows) 
+
 [GUI tutorial](https://www.reddit.com/r/Windows10/comments/4w0fbn/full_gui_on_bash_on_ubuntu_on_windows/)
 
 
