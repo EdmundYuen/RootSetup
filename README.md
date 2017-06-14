@@ -14,7 +14,7 @@ Most recent available build of ROOT for Windows.
 #### Visual Studio Express 2013 for Windows Desktop with Update 5 (x86) - Web Installer (English)
 ##### [en_visual_studio_express_2013_for_windows_desktop_with_update_5_x86_web_installer_6815514.exe](https://my.visualstudio.com/Downloads?pid=1819)
 
-_A free Visual Studio Dev Essentials subscription will be required to access the above download. See [here](https://www.visualstudio.com/vs/older-downloads/) for more information._
+_A Visual Studio Dev Essentials subscription is now required to access the above download. See [here](https://www.visualstudio.com/vs/older-downloads/) for more information._
 
 Required to compile C++. Express version does not include the full set of developer tools for Visual Studio, but is sufficient for compiler functionality. Web installer.
 
@@ -24,28 +24,28 @@ Required to compile C++. Express version does not include the full set of develo
     > (Launch after installation to check that the installation is working. Skip sign in. Initial launch might lag/Sign-in window is hidden.)
 
 2. Install Root
-    > (Choose 'Add ROOT to the system PATH for all users.' Default installation directroy = C:\root_v5.34.36)
+    > (Choose 'Add ROOT to the system PATH for all users.' Default installation directroy = `C:\root_v5.34.36`)
 
 3. Test Root by typing the following commands in Command Prompt
-    > `>root` (will fail if environment variables are not configured)   
+    > `root` (will fail if environment variables are not configured)   
     
-    > `[] .q` (exits Root)
+    > `.q` (exits Root)
 
-4. IMPT: for command line C++ compiler functionality, launch cmd.exe from the provided shortcut (auto runs vcvarsall.bat that sets up Visual Studio environment variables)
-	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts
-	(I copied the x86 one to the desktop)
+4. For command line C++ compiler functionality, launch cmd.exe from the following shortcut (auto runs vcvarsall.bat that sets up Visual Studio environment variables)
+    > VS2013 x86 Native Tools Command Prompt (look in `C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts`)
 
 5. Test compiler by building the provided Root tests
-	cd C:\root_v5.34.36\test
-	nmake /f makefile.win32 (will fail saying w32pragma.h cannot be found if environment variables are not configured)
+    > `cd C:\root_v5.34.36\test`
+    > `nmake /f makefile.win32`(will fail saying w32pragma.h cannot be found if environment variables are not configured)
 
 6. Benchmark
-	C:\root_v5.34.36\test\stress.exe
-	(Congrats, your laptop is about 1.5x faster than my laptop. i7 vs i5 xD)
+    > `C:\root_v5.34.36\test\stress.exe`
 
 7. Modify cmd shortcut to start in your work directory
-	Shortcut properties > change the directory listed for 'Start in:'
-	! append the following " && C:\root_v5.34.36\bin\thisroot.bat" to the target to run thisroot.bat on startup of cmd prompt (this should set env variables needed)
+    > Shortcut properties > change the directory listed for 'Start in:'
+    
+8. Modify cmd shortcut to setup Root environmental variables
+    > append the following `" && C:\root_v5.34.36\bin\thisroot.bat"` to the target to run thisroot.bat on startup of cmd prompt
 
 
 ## WSL (Windows Subsystem for Linux)
@@ -55,24 +55,26 @@ Required to compile C++. Express version does not include the full set of develo
 
 3. Search for "bash" and press enter/run bash from cmd prompt. Installation will begin.
 
-4. Refer to https://root.cern/build-prerequisites under Ubuntu 10, 12 , 14 and 16 and install useful packages (may be required for building Root/RooUnfold)
+4. Refer to https://root.cern/build-prerequisites under Ubuntu 10, 12 , 14 and 16 and install useful packages
 
 
 ## ROOT for WSL
 1. Choose either to build from source or download the binary (Ubuntu 14 gcc4.8	root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz)
-	To download binary in bash: "wget https://root.cern.ch/download/root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz"
+    > To download binary in bash: `wget https://root.cern.ch/download/root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz`
 
-2. Instructions for building root are here (https://root.cern/building-root). For the binary, simply unpack in desired directory/home (eg. tar -xf filename)
+2. Instructions for building root are here (https://root.cern/building-root). For the binary, simply unpack in desired directory/home (eg. `tar -xf filename`)
 
-3. Append the following lines to .bashrc (~/.bashrc) "source [path]/thisroot.sh" and "export DISPLAY=localhost:0"
-	Bash input: 	echo 'source [path]/thisroot.sh' >> ~/.bashrc
-			echo 'export DISPLAY="localhost:0"' >> ~/.bashrc
-	Alternative: navigate to dir containing thisroot.sh and run "source thisroot.sh" then "which thisroot.sh" to determine the right path
+3. Append the following lines to .bashrc (~/.bashrc) `source [path]/thisroot.sh` and `export DISPLAY=localhost:0`
+    > Bash input: 	`echo 'source [path]/thisroot.sh' >> ~/.bashrc`
+    
+			`echo 'export DISPLAY="localhost:0"' >> ~/.bashrc`
+    > Tip: navigate to the dir containing thisroot.sh and run `source thisroot.sh` then `which thisroot.sh` to determine the right path
+    > Alternative: `nano ~/.bashrc` to manually edit the file to include the required two lines above
 
 4. The machine name needs to be added to /etc/hosts (to fix "unable to resolve localhost").
-	The simplest way is to delete the hosts file and restart bash "rm /etc/hosts". The hosts file will be automatically updated.
+    > The simplest way is to delete the hosts file `rm /etc/hosts` and restart bash `exit`. The hosts file will be automatically updated.
 
-5. Restart bash, type "root" and analyse away
+5. Restart bash, type `root` and analyse away
 
 
 
@@ -82,7 +84,7 @@ TODO in future if there's luxury of time.
 
 ## Utility Programs
 Bitvise for file transfer: https://www.bitvise.com/ssh-client-download
-	Server host: lxplus.cern.ch
+    > Server host: lxplus.cern.ch
 
 
 ## MISC
@@ -90,4 +92,3 @@ VNC Tutorial	https://www.digitalocean.com/community/tutorials/how-to-install-and
 Reddit wiki	https://www.reddit.com/r/bashonubuntuonwindows/wiki/index
 More wiki	https://github.com/abergs/ubuntuonwindows 
 GUI tutorial	https://www.reddit.com/r/Windows10/comments/4w0fbn/full_gui_on_bash_on_ubuntu_on_windows/
-Contact GitHub 
