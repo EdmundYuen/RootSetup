@@ -3,8 +3,8 @@ A rough guide for setting up Root on Windows machines (work in progress)
 
 Before you begin, do consider if the following alternatives are adequate for your needs:
 1. [The Swan Service](https://swan.web.cern.ch/): Online data analysis powered by Jupyter.
-2. [VirtualBox](https://www.virtualbox.org/): Run Root through a Virtual Machine using a provided disk image.
-3. [LXPLUS Service](http://information-technology.web.cern.ch/services/lxplus-service): 
+2. [VirtualBox](https://www.virtualbox.org/): Load a provided disk image with Root installed into a Virtual Machine.
+3. [LXPLUS Service](http://information-technology.web.cern.ch/services/lxplus-service): You will probably be running your code on this anyway.
 
 
 ## Root for Windows
@@ -41,6 +41,7 @@ Required to compile C++. Express version does not include the full set of develo
 
 5. Test compiler by building the provided Root tests
     > `cd C:\root_v5.34.36\test`
+    
     > `nmake /f makefile.win32`(will fail saying w32pragma.h cannot be found if environment variables are not configured)
 
 6. Benchmark
