@@ -71,9 +71,12 @@ Required to compile C++. Express version does not include the full set of develo
 2. Instructions for building root are here (https://root.cern/building-root). For the binary, simply unpack in desired directory/home (eg. `tar -xf filename`)
 
 3. Append the following lines to .bashrc (~/.bashrc) `source [path]/thisroot.sh` and `export DISPLAY=localhost:0`
-    > Bash input: 	`echo 'source [path]/thisroot.sh' >> ~/.bashrc`
+    > Bash input: 
+    ```
+    echo 'source [path]/thisroot.sh' >> ~/.bashrc`
     
-			`echo 'export DISPLAY="localhost:0"' >> ~/.bashrc`
+    echo 'export DISPLAY="localhost:0"' >> ~/.bashrc
+    ```
     > Tip: navigate to the dir containing thisroot.sh and run `source thisroot.sh` then `which thisroot.sh` to determine the right path
     
     > Alternative: `nano ~/.bashrc` to manually edit the file to include the required two lines above
