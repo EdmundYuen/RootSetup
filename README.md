@@ -1,6 +1,11 @@
 # Root Setup
 A rough guide for setting up Root on Windows machines (work in progress)
 
+Before you begin, do consider if the following alternatives are adequate for your needs:
+1. [The Swan Service](https://swan.web.cern.ch/): Online data analysis powered by Jupyter.
+2. [VirtualBox](https://www.virtualbox.org/): Run Root through a Virtual Machine using a provided disk image.
+3. [LXPLUS Service](http://information-technology.web.cern.ch/services/lxplus-service): 
+
 
 ## Root for Windows
 
@@ -88,7 +93,9 @@ Bitvise for file transfer: https://www.bitvise.com/ssh-client-download
 
 
 ## MISC
-VNC Tutorial	https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-14-04
-Reddit wiki	https://www.reddit.com/r/bashonubuntuonwindows/wiki/index
-More wiki	https://github.com/abergs/ubuntuonwindows 
-GUI tutorial	https://www.reddit.com/r/Windows10/comments/4w0fbn/full_gui_on_bash_on_ubuntu_on_windows/
+[VNC Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-14-04)
+[Reddit wiki](https://www.reddit.com/r/bashonubuntuonwindows/wiki/index)
+[More wiki](https://github.com/abergs/ubuntuonwindows) 
+[GUI tutorial](https://www.reddit.com/r/Windows10/comments/4w0fbn/full_gui_on_bash_on_ubuntu_on_windows/)
+
+
