@@ -52,6 +52,8 @@ Required to compile C++. Express version does not include the full set of develo
     
 8. Modify cmd shortcut to setup Root environmental variables
     > append the following ` && C:\root_v5.34.36\bin\thisroot.bat` to the target to run thisroot.bat on startup of cmd prompt
+    
+    > i.e. `%comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat"" x86 && C:\root_v5.34.36\bin\thisroot.bat`
 
 
 ## WSL (Windows Subsystem for Linux)
