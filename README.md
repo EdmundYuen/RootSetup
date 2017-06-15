@@ -51,7 +51,7 @@ Required to compile C++. Express version does not include the full set of develo
     > Shortcut properties > change the directory listed for 'Start in:'
     
 8. Modify cmd shortcut to setup Root environmental variables
-    > append the following `" && C:\root_v5.34.36\bin\thisroot.bat"` to the target to run thisroot.bat on startup of cmd prompt
+    > append the following ` && C:\root_v5.34.36\bin\thisroot.bat` to the target to run thisroot.bat on startup of cmd prompt
 
 
 ## WSL (Windows Subsystem for Linux)
