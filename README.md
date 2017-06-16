@@ -79,7 +79,7 @@ Required to compile C++. Express version does not include the full set of develo
     
     echo 'export DISPLAY=:0' >> ~/.bashrc
     ```
-    > Tip: navigate to the dir containing thisroot.sh and run `source thisroot.sh` then `which thisroot.sh` to determine the right path
+    > Tip: navigate to the dir containing thisroot.sh and run `thisroot.sh` then `which thisroot.sh` to determine the right path
     
     > Alternative: `nano ~/.bashrc` to manually edit the file to include the required two lines above
 
