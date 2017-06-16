@@ -90,6 +90,11 @@ Required to compile C++. Express version does not include the full set of develo
 
 
 
+## GUI for LXPLUS through PuTTY and X-win32
+[XWin-32 X11 Server for Windows](https://espace.cern.ch/winservices-help/NICEApplications/HelpForApplications/Pages/XWin-32-X11.aspx)
+Be sure to enable X-11 forwarding in PuTTY and follow the installation instructions in the page above carefully.
+
+
 ## GUI for WSL with VNC
 TODO in future if there's luxury of time.
 
