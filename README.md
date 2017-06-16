@@ -77,7 +77,7 @@ Required to compile C++. Express version does not include the full set of develo
     ```
     echo 'source [path]/thisroot.sh' >> ~/.bashrc`
     
-    echo 'export DISPLAY=":0"' >> ~/.bashrc
+    echo 'export DISPLAY=:0' >> ~/.bashrc
     ```
     > Tip: navigate to the dir containing thisroot.sh and run `source thisroot.sh` then `which thisroot.sh` to determine the right path
     
