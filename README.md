@@ -72,12 +72,12 @@ Required to compile C++. Express version does not include the full set of develo
 
 2. Instructions for building root are here (https://root.cern/building-root). For the binary, simply unpack in desired directory/home (eg. `tar -xf filename`)
 
-3. Append the following lines to .bashrc (~/.bashrc) `source [path]/thisroot.sh` and `export DISPLAY=localhost:0`
+3. Append the following lines to .bashrc (~/.bashrc) `source [path]/thisroot.sh` and `export DISPLAY=:0`
     > Bash input: 
     ```
     echo 'source [path]/thisroot.sh' >> ~/.bashrc`
     
-    echo 'export DISPLAY="localhost:0"' >> ~/.bashrc
+    echo 'export DISPLAY=":0"' >> ~/.bashrc
     ```
     > Tip: navigate to the dir containing thisroot.sh and run `source thisroot.sh` then `which thisroot.sh` to determine the right path
     
@@ -90,13 +90,17 @@ Required to compile C++. Express version does not include the full set of develo
 
 
 
-## GUI for LXPLUS through PuTTY and X-win32
+## GUI for LXPLUS through PuTTY with XWin-32
 [XWin-32 X11 Server for Windows](https://espace.cern.ch/winservices-help/NICEApplications/HelpForApplications/Pages/XWin-32-X11.aspx)
 
 Be sure to enable X-11 forwarding in PuTTY and follow the installation instructions in the page above carefully.
 
 
-## GUI for WSL with VNC
+## GUI for WSL with X-win32
+Set up XWin-32 as in the previous section and be sure to set the DISPLAY (see Step 3 of **ROOT for WSL**)
+
+
+## GUI for LXPLUS/WSL with VNC
 TODO in future if there's luxury of time.
 
 
