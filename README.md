@@ -36,7 +36,7 @@ Required to compile C++. Express version does not include the full set of develo
     
     > `.q` (exits Root)
 
-4. For command line C++ compiler functionality, launch cmd.exe from the following shortcut (auto runs vcvarsall.bat that sets up Visual Studio environment variables)
+4. For command line C++ compiler functionality, make a copy of the following shortcut and launch cmd.exe using it (auto runs vcvarsall.bat that sets up Visual Studio environment variables)
     > VS2013 x86 Native Tools Command Prompt (look in `C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts`)
 
 5. Test compiler by building the provided Root tests
