@@ -56,7 +56,7 @@ Required to compile C++. Express version does not include the full set of develo
     > i.e. `%comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat"" x86 && C:\root_v5.34.36\bin\thisroot.bat`
 
 
-## WSL (Windows Subsystem for Linux)
+## WSL (Windows Subsystem for Linux) / Bash on Ubuntu on Windows
 1. Search for "Turn Windows features on or off" and enable the Windows Subsystem for Linux option (Restart required)
 
 2. Search for "Use developer features" and choose Developer mode
@@ -87,6 +87,8 @@ Required to compile C++. Express version does not include the full set of develo
     > The simplest way is to delete the hosts file `rm /etc/hosts` and restart bash `exit`. The hosts file will be automatically updated.
 
 5. Restart bash, type `root` and analyse away
+
+6. Note: The latest version of Bash on Ubuntu on Windows runs on Ubuntu 16 with gcc g++ 5. Downgrade gcc g++ to 4.8 to maintain compatibility with 5.34/36. It is unclear if there's a need to use Ubuntu 14 to maintain compatibility. Alternatively, install a more recent release of Root compatible with Ubuntu 16 and gcc g++ 5.
 
 
 
